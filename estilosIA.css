@@ -1,0 +1,115 @@
+/* estilosIA.css */
+
+/* Estilo para el encabezado y la navegación */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Estilo para las secciones */
+section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el contenedor de cada planta */
+.planta {
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    align-items: center; /* Centra verticalmente el contenido */
+    height: auto; /* Ajusta automáticamente la altura al contenido */
+    flex-direction: column; /* Cambia la dirección de flex a columna */
+    text-align: left; /* Alinea el texto a la izquierda */
+    width: 25%; /* Establece el ancho al 25% del contenedor padre (puedes ajustar este valor según tus preferencias) */
+}
+
+/* Estilo para la información de la planta (título, texto, enlace) */
+.planta-info {
+    flex: 1;
+    padding: 10px;
+    width: 100%; /* Ocupa todo el ancho del contenedor de la planta */
+}
+
+/* Estilo para el título de la planta */
+.planta h3 {
+    text-align: left; /* Alinea el título a la izquierda */
+    margin-bottom: 10px;
+}
+
+/* Estilo para la información de la planta (texto y enlace) */
+.planta-info p, .planta-info a {
+    text-align: left; /* Alinea el texto y el enlace a la izquierda */
+}
+
+/* Estilo para la imagen de la planta */
+.planta-imagen {
+    padding: 10px;
+    width: 100%; /* Ocupa todo el ancho del contenedor de la planta */
+    
+}
+
+.planta-recuadro {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .plantas-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .planta {
+        width: 45%; /* Ajusta el ancho en pantallas más pequeñas */
+    }
+}
+
+#selector-planta {
+    margin: 20px;
+    font-size: 16px;
+}
+
+#tipo-planta {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo para el botón de envío */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el encabezado y otros elementos si es necesario */
+h1 {
+    font-size: 24px;
+    margin: 20px;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosIA.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="contacto.html" style="color: white;">Contacto</a></li>
+            <li><a href="sobre-mi.html" style="color: white;">Sobre Mí</a></li>
+            <li><a href="index.html" style="color: white;">Plantas </a></li>
+            <li><a href="actividad.html" style="color: white;">ACTIVIDAD 1 - PROYECTO DE SOFTWARE </a></li>
+        </ul>
+    </nav>
+    </header>
+    <section>
+        <h1>Plantas</h1>
+        <form id="selector-planta">
+            <label for="tipo-planta">Selecciona el tipo de planta:</label>
+            <select id="tipo-planta" name="tipo-planta" onchange="location = this.value">
+                <option value="plantasExterior.html">Plantas de Exterior</option>
+                <option value="plantasInterior.html">Plantas de Interior</option>
+                <option value="index.html">Todos</option>
+            </select>
+            <input type="submit" value="Ir">
+        </form>
+        
+        <div class="plantas-container">
+            <div class="planta exterior">
+                <h2>Exterior</h2>
+                <div class="planta-info">
+                    <h3>Verdecora Jazmín de Chile con espaldera</h3>
+                    <div class="planta-imagen">
+                        <img src="imagenes/verdecoraJazmíndeChileconespaldera.jpg" alt="Planta de Exterior 1" style="max-width: 200px;">
+                    </div>
+                    <p>Información sobre la planta de exterior 1.</p>
+                    <a href="info/VerdecoraJazminDeChileConEspaldera.pdf" download>+info</a>
+                </div>
+                <div class="planta-info">
+                    <h3>Aloe Vera</h3>
+                    <div class="planta-imagen">
+                        <img src="imagenes/AloeVera.jpg" alt="Planta de Exterior 1" style="max-width: 200px;">
+                    </div>
+                    <p>Información sobre la planta de exterior 1.</p>
+                    <a href="info/AloeVera.pdf" download>+info</a>
+                </div>
+                <div class="planta-info">
+                    <h3>Aloe Vera</h3>
+                    <div class="planta-imagen">
+                        <img src="imagenes/cycaRevoluta.jpg" alt="Planta de Exterior 1" style="max-width: 200px;">
+                    </div>
+                    <p>Información sobre la planta de exterior 1.</p>
+                    <a href="info/cycaRevoluta.pdf" download>+info</a>
+                </div>
+            </div>
+        </div>
+    </section>  
+</body>
+</html>
